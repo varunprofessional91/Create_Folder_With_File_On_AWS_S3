@@ -22,12 +22,10 @@ public class Pack_Class {
         Date date = Calendar.getInstance().getTime();
         DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd hhmmss");
         DateFormat dateFormat2 = new SimpleDateFormat("yyyyMMdd");
-
         String strDate = dateFormat.format(date);
         String strDate2 = dateFormat2.format(date);
-
-        String accessKey = "AKIA3MNGU5RUHOBGDN4X";    // example accessKey
-        String secretKey = "pC5v/4oPXraoDR43fd1tX8tQlyay8AAS8JJaKlqN";    // example secretKey
+        String accessKey = "put access key here";    // example accessKey
+        String secretKey = "put secret key here";    // example secretKey
         AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
         AmazonS3 s3 = new AmazonS3Client(credentials, new ClientConfiguration().withProtocol(Protocol.HTTP));
         String bucketName = "varunkumarr92/parentfolder/childfolder";    // example bucketName
