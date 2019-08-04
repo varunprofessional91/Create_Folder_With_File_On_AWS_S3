@@ -28,7 +28,7 @@ public class Pack_Class {
         String secretKey = "put secret key here";    // example secretKey
         AWSCredentials credentials = new BasicAWSCredentials(accessKey, secretKey);
         AmazonS3 s3 = new AmazonS3Client(credentials, new ClientConfiguration().withProtocol(Protocol.HTTP));
-        String bucketName = "varunkumarr92/parentfolder/childfolder";    // example bucketName
+        String bucketName = "put bucket name here";    // example bucketName
         String key = strDate2 + "/" + strDate + ".txt";
         InputStream input = new ByteArrayInputStream(new byte[0]);
         ObjectMetadata metadata = new ObjectMetadata();
